@@ -41,7 +41,7 @@ const KeycloakProvider: FactoryProvider<Keycloak> = {
         bearerOnly: true,
         clientId,
         realm,
-        serverUrl: `${baseUrl}/auth`,
+        serverUrl: `${baseUrl}`,
         credentials: {
           ...(clientSecret ? { secret: clientSecret } : {}),
         },
